@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.pr1_4.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox alignment="CENTER" prefHeight="30.0" prefWidth="150.0">
+      <children>
+      
+          <Label fx:id="welcomeText" alignment="CENTER" text="Размер массива:">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Label>
+         <TextField fx:id="TF_n" maxHeight="25.0" maxWidth="50.0" minHeight="25.0" minWidth="50.0" prefHeight="25.0" prefWidth="50.0">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </TextField>
+      </children>
+   </HBox>
+   <TextArea fx:id="TA_mas" prefHeight="200.0" prefWidth="200.0" />
+   <Label fx:id="LBL_res_pr">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+   <Label fx:id="LBL_res_sum">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+    <Button onAction="#onHelloButtonClick" text="Рассчитать!">
+      <font>
+         <Font size="15.0" />
+      </font></Button>
+</VBox>
